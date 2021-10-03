@@ -1,28 +1,1818 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Sailing by the Stars</title>
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Adventure sailing, Celestial navigation </h1>
-				<p>try this <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-			</ul>
-		</footer>
-	</body>
-</html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b1a5666571cc41e3a863adb9d356d2da {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b1a5666571cc41e3a863adb9d356d2da" ></div>
+        
+</body>
+<script>    
+    
+            var map_b1a5666571cc41e3a863adb9d356d2da = L.map(
+                "map_b1a5666571cc41e3a863adb9d356d2da",
+                {
+                    center: [-29.0, 26.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_10ab171c54c747fda83fa5f2025e7acf = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+            var circle_marker_93da7acb728d4d7d885da7082fc63886 = L.circleMarker(
+                [-31.876936999999998, 18.981019],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_88060450f0f243229e4618817cb3eaa4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ef3d538a54b94a48be54261eaef4bd9b = $(`<div id="html_ef3d538a54b94a48be54261eaef4bd9b" style="width: 100.0%; height: 100.0%;">Bliss and Stars (cederberg)</div>`)[0];
+            popup_88060450f0f243229e4618817cb3eaa4.setContent(html_ef3d538a54b94a48be54261eaef4bd9b);
+        
+
+        circle_marker_93da7acb728d4d7d885da7082fc63886.bindPopup(popup_88060450f0f243229e4618817cb3eaa4)
+        ;
+
+        
+    
+    
+            circle_marker_93da7acb728d4d7d885da7082fc63886.bindTooltip(
+                `<div>
+                     Bliss and Stars (cederberg)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bfc064dba322431a9da152e8986a84da = L.circleMarker(
+                [-24.154524, 28.407141999999997],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_57ee0d29a20349378afbd7160584c0b9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_92b3405baff84d198d6bf933b2c113af = $(`<div id="html_92b3405baff84d198d6bf933b2c113af" style="width: 100.0%; height: 100.0%;">Leobo Lodge</div>`)[0];
+            popup_57ee0d29a20349378afbd7160584c0b9.setContent(html_92b3405baff84d198d6bf933b2c113af);
+        
+
+        circle_marker_bfc064dba322431a9da152e8986a84da.bindPopup(popup_57ee0d29a20349378afbd7160584c0b9)
+        ;
+
+        
+    
+    
+            circle_marker_bfc064dba322431a9da152e8986a84da.bindTooltip(
+                `<div>
+                     Leobo Lodge
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5a652228795a44e49166c777aadeb75f = L.circleMarker(
+                [-26.15087505, 20.252620699999998],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_77904af70a6a4241a5c58c88dfac9dec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5bbd8043169240bd84585619b3562e50 = $(`<div id="html_5bbd8043169240bd84585619b3562e50" style="width: 100.0%; height: 100.0%;">!xaus lodge</div>`)[0];
+            popup_77904af70a6a4241a5c58c88dfac9dec.setContent(html_5bbd8043169240bd84585619b3562e50);
+        
+
+        circle_marker_5a652228795a44e49166c777aadeb75f.bindPopup(popup_77904af70a6a4241a5c58c88dfac9dec)
+        ;
+
+        
+    
+    
+            circle_marker_5a652228795a44e49166c777aadeb75f.bindTooltip(
+                `<div>
+                     !xaus lodge
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_40234a9d971443fbad74ddef59005763 = L.circleMarker(
+                [-25.35033975, 30.879385499999998],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_7780d0c10be2432ca7ea5adeb36b0d74 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bb1d2639cc4b4f698f854b82d331de2c = $(`<div id="html_bb1d2639cc4b4f698f854b82d331de2c" style="width: 100.0%; height: 100.0%;">celestial events sa mbombela)</div>`)[0];
+            popup_7780d0c10be2432ca7ea5adeb36b0d74.setContent(html_bb1d2639cc4b4f698f854b82d331de2c);
+        
+
+        circle_marker_40234a9d971443fbad74ddef59005763.bindPopup(popup_7780d0c10be2432ca7ea5adeb36b0d74)
+        ;
+
+        
+    
+    
+            circle_marker_40234a9d971443fbad74ddef59005763.bindTooltip(
+                `<div>
+                     celestial events sa mbombela)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b5eacf88b21045ae9ef7fb60389bf31c = L.circleMarker(
+                [-24.191126999999998, 28.293356],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_1942fb746400439ca16fe17984b46286 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_068cf3f7b33744109917d92997ca338f = $(`<div id="html_068cf3f7b33744109917d92997ca338f" style="width: 100.0%; height: 100.0%;">waterberg cottages</div>`)[0];
+            popup_1942fb746400439ca16fe17984b46286.setContent(html_068cf3f7b33744109917d92997ca338f);
+        
+
+        circle_marker_b5eacf88b21045ae9ef7fb60389bf31c.bindPopup(popup_1942fb746400439ca16fe17984b46286)
+        ;
+
+        
+    
+    
+            circle_marker_b5eacf88b21045ae9ef7fb60389bf31c.bindTooltip(
+                `<div>
+                     waterberg cottages
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ea5bb112a93a44afa465fb53093e11cb = L.circleMarker(
+                [-32.500555600000006, 19.2569444],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_e4ec61207d6c4b9480cc77e4a94e0bd3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b708c6574d6b4eaeb2aa623bd0593114 = $(`<div id="html_b708c6574d6b4eaeb2aa623bd0593114" style="width: 100.0%; height: 100.0%;">Cederberg ridge</div>`)[0];
+            popup_e4ec61207d6c4b9480cc77e4a94e0bd3.setContent(html_b708c6574d6b4eaeb2aa623bd0593114);
+        
+
+        circle_marker_ea5bb112a93a44afa465fb53093e11cb.bindPopup(popup_e4ec61207d6c4b9480cc77e4a94e0bd3)
+        ;
+
+        
+    
+    
+            circle_marker_ea5bb112a93a44afa465fb53093e11cb.bindTooltip(
+                `<div>
+                     Cederberg ridge
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a29c74e8804d4b31b138197de50c066e = L.circleMarker(
+                [-32.488053, 19.269430631096817],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_a26c1d04dde643a0ae82b9409d0217ee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_46ec7fd914de411da4c13a554f1dd2b5 = $(`<div id="html_46ec7fd914de411da4c13a554f1dd2b5" style="width: 100.0%; height: 100.0%;">sanddrif cederberg</div>`)[0];
+            popup_a26c1d04dde643a0ae82b9409d0217ee.setContent(html_46ec7fd914de411da4c13a554f1dd2b5);
+        
+
+        circle_marker_a29c74e8804d4b31b138197de50c066e.bindPopup(popup_a26c1d04dde643a0ae82b9409d0217ee)
+        ;
+
+        
+    
+    
+            circle_marker_a29c74e8804d4b31b138197de50c066e.bindTooltip(
+                `<div>
+                     sanddrif cederberg
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b6c35014db3d4a24b50717171a090ced = L.circleMarker(
+                [-24.006826999999998, 31.745608],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_5979e560f24643c2af17d4dba121a4fc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bfc89ed855614949be66e6999d8f170d = $(`<div id="html_bfc89ed855614949be66e6999d8f170d" style="width: 100.0%; height: 100.0%;">oliphants camp SANPARKS</div>`)[0];
+            popup_5979e560f24643c2af17d4dba121a4fc.setContent(html_bfc89ed855614949be66e6999d8f170d);
+        
+
+        circle_marker_b6c35014db3d4a24b50717171a090ced.bindPopup(popup_5979e560f24643c2af17d4dba121a4fc)
+        ;
+
+        
+    
+    
+            circle_marker_b6c35014db3d4a24b50717171a090ced.bindTooltip(
+                `<div>
+                     oliphants camp SANPARKS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ed2e6e9e40704f9db409916b61542317 = L.circleMarker(
+                [-33.5098627, 20.620554100000003],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_c7e8c910094e42d0b74d1261a04bceb2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cc4650cfd43245d5bd4d87947d2b5887 = $(`<div id="html_cc4650cfd43245d5bd4d87947d2b5887" style="width: 100.0%; height: 100.0%;">Anysberg Capenature</div>`)[0];
+            popup_c7e8c910094e42d0b74d1261a04bceb2.setContent(html_cc4650cfd43245d5bd4d87947d2b5887);
+        
+
+        circle_marker_ed2e6e9e40704f9db409916b61542317.bindPopup(popup_c7e8c910094e42d0b74d1261a04bceb2)
+        ;
+
+        
+    
+    
+            circle_marker_ed2e6e9e40704f9db409916b61542317.bindTooltip(
+                `<div>
+                     Anysberg Capenature
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3e02f1faef53458389bcd8f45fcae401 = L.circleMarker(
+                [-33.222626, 22.030331],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_7470b0ffc59a49f2a35174d80c14922f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b4f38fc1af3540df911a80c8c5305657 = $(`<div id="html_b4f38fc1af3540df911a80c8c5305657" style="width: 100.0%; height: 100.0%;">astrotours.co.za prince albert</div>`)[0];
+            popup_7470b0ffc59a49f2a35174d80c14922f.setContent(html_b4f38fc1af3540df911a80c8c5305657);
+        
+
+        circle_marker_3e02f1faef53458389bcd8f45fcae401.bindPopup(popup_7470b0ffc59a49f2a35174d80c14922f)
+        ;
+
+        
+    
+    
+            circle_marker_3e02f1faef53458389bcd8f45fcae401.bindTooltip(
+                `<div>
+                     astrotours.co.za prince albert
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7380ef6199cf4b31a0e6c9757a908aa8 = L.circleMarker(
+                [-24.7397593, 15.2876134],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_5c682d0eabb7479a8b964c03217009ab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eedc1811f8654b5080068915a371ebb9 = $(`<div id="html_eedc1811f8654b5080068915a371ebb9" style="width: 100.0%; height: 100.0%;">andbeyond (namibia)</div>`)[0];
+            popup_5c682d0eabb7479a8b964c03217009ab.setContent(html_eedc1811f8654b5080068915a371ebb9);
+        
+
+        circle_marker_7380ef6199cf4b31a0e6c9757a908aa8.bindPopup(popup_5c682d0eabb7479a8b964c03217009ab)
+        ;
+
+        
+    
+    
+            circle_marker_7380ef6199cf4b31a0e6c9757a908aa8.bindTooltip(
+                `<div>
+                     andbeyond (namibia)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6dcece0a5c0f4b82b2bc62f59805bc5a = L.circleMarker(
+                [-18.568534, 24.051389999999998],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_0e9776106cf94fcdaabb42e7145cb015 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c3687c421cff47bca8a74601492b6df7 = $(`<div id="html_c3687c421cff47bca8a74601492b6df7" style="width: 100.0%; height: 100.0%;">savute elephant lodge (Botswana)</div>`)[0];
+            popup_0e9776106cf94fcdaabb42e7145cb015.setContent(html_c3687c421cff47bca8a74601492b6df7);
+        
+
+        circle_marker_6dcece0a5c0f4b82b2bc62f59805bc5a.bindPopup(popup_0e9776106cf94fcdaabb42e7145cb015)
+        ;
+
+        
+    
+    
+            circle_marker_6dcece0a5c0f4b82b2bc62f59805bc5a.bindTooltip(
+                `<div>
+                     savute elephant lodge (Botswana)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_21c964c634c746158cbaf45a5b3b80ec = L.circleMarker(
+                [-32.7460776, 19.5629242],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_3d84bdb45d8245099dc73f801c3a7660 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_131ab86b5f8a41caa41fd4428cf9e169 = $(`<div id="html_131ab86b5f8a41caa41fd4428cf9e169" style="width: 100.0%; height: 100.0%;">kagga kamma</div>`)[0];
+            popup_3d84bdb45d8245099dc73f801c3a7660.setContent(html_131ab86b5f8a41caa41fd4428cf9e169);
+        
+
+        circle_marker_21c964c634c746158cbaf45a5b3b80ec.bindPopup(popup_3d84bdb45d8245099dc73f801c3a7660)
+        ;
+
+        
+    
+    
+            circle_marker_21c964c634c746158cbaf45a5b3b80ec.bindTooltip(
+                `<div>
+                     kagga kamma
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_104e9ff4992b43aca49a23fb4e8343a7 = L.circleMarker(
+                [-33.8521407, 18.4900685],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_0afc2d1bc9214cc0a489318811a3d555 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_822272e3fa524dff9f9ee00835beea64 = $(`<div id="html_822272e3fa524dff9f9ee00835beea64" style="width: 100.0%; height: 100.0%;">aquila</div>`)[0];
+            popup_0afc2d1bc9214cc0a489318811a3d555.setContent(html_822272e3fa524dff9f9ee00835beea64);
+        
+
+        circle_marker_104e9ff4992b43aca49a23fb4e8343a7.bindPopup(popup_0afc2d1bc9214cc0a489318811a3d555)
+        ;
+
+        
+    
+    
+            circle_marker_104e9ff4992b43aca49a23fb4e8343a7.bindTooltip(
+                `<div>
+                     aquila
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c951591666894ff9904d511241460eb0 = L.circleMarker(
+                [-29.1444136, 29.81613811967464],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_65130ef4207a4737b5d18fec861c06a9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_51fd029c4b264efda02d52201ee52b4e = $(`<div id="html_51fd029c4b264efda02d52201ee52b4e" style="width: 100.0%; height: 100.0%;">Antbear Lodge</div>`)[0];
+            popup_65130ef4207a4737b5d18fec861c06a9.setContent(html_51fd029c4b264efda02d52201ee52b4e);
+        
+
+        circle_marker_c951591666894ff9904d511241460eb0.bindPopup(popup_65130ef4207a4737b5d18fec861c06a9)
+        ;
+
+        
+    
+    
+            circle_marker_c951591666894ff9904d511241460eb0.bindTooltip(
+                `<div>
+                     Antbear Lodge
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_122fb9a828314b3e92c6ace115db9990 = L.circleMarker(
+                [-24.701110999999997, 28.408889000000002],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_a80d0122ee0b4a9e867ee22e68370537 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6241029dd17748d3ac244dd3d5375907 = $(`<div id="html_6241029dd17748d3ac244dd3d5375907" style="width: 100.0%; height: 100.0%;">Bateleur Enterprises</div>`)[0];
+            popup_a80d0122ee0b4a9e867ee22e68370537.setContent(html_6241029dd17748d3ac244dd3d5375907);
+        
+
+        circle_marker_122fb9a828314b3e92c6ace115db9990.bindPopup(popup_a80d0122ee0b4a9e867ee22e68370537)
+        ;
+
+        
+    
+    
+            circle_marker_122fb9a828314b3e92c6ace115db9990.bindTooltip(
+                `<div>
+                     Bateleur Enterprises
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_807fd9e9cd764eb585013c3124c21712 = L.circleMarker(
+                [-33.73374445, 19.989177641444094],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_2fd6f0ef190e4243aba16992b6dd2811 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6a884345c4e3452083882d14f00fe88a = $(`<div id="html_6a884345c4e3452083882d14f00fe88a" style="width: 100.0%; height: 100.0%;">ELF</div>`)[0];
+            popup_2fd6f0ef190e4243aba16992b6dd2811.setContent(html_6a884345c4e3452083882d14f00fe88a);
+        
+
+        circle_marker_807fd9e9cd764eb585013c3124c21712.bindPopup(popup_2fd6f0ef190e4243aba16992b6dd2811)
+        ;
+
+        
+    
+    
+            circle_marker_807fd9e9cd764eb585013c3124c21712.bindTooltip(
+                `<div>
+                     ELF
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7155a4c2a5864d758f769b6ab9676ffb = L.circleMarker(
+                [-29.116395, 26.215496],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_65c982aab4164fe7b3ce042c0fdbcb65 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_64d1213170394a8892c89062fd4eb1d7 = $(`<div id="html_64d1213170394a8892c89062fd4eb1d7" style="width: 100.0%; height: 100.0%;">BON Hotel Bloemfontein Central</div>`)[0];
+            popup_65c982aab4164fe7b3ce042c0fdbcb65.setContent(html_64d1213170394a8892c89062fd4eb1d7);
+        
+
+        circle_marker_7155a4c2a5864d758f769b6ab9676ffb.bindPopup(popup_65c982aab4164fe7b3ce042c0fdbcb65)
+        ;
+
+        
+    
+    
+            circle_marker_7155a4c2a5864d758f769b6ab9676ffb.bindTooltip(
+                `<div>
+                     BON Hotel Bloemfontein Central
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3a12841de14343cbb6775cb1d0a3e511 = L.circleMarker(
+                [-28.517520500000003, 20.069182129926727],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_2ebbdf9779f1445c8fedff8bfa0980fb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_188362859c6948f4bba0d7903175d4ab = $(`<div id="html_188362859c6948f4bba0d7903175d4ab" style="width: 100.0%; height: 100.0%;">Tutwa Lodge </div>`)[0];
+            popup_2ebbdf9779f1445c8fedff8bfa0980fb.setContent(html_188362859c6948f4bba0d7903175d4ab);
+        
+
+        circle_marker_3a12841de14343cbb6775cb1d0a3e511.bindPopup(popup_2ebbdf9779f1445c8fedff8bfa0980fb)
+        ;
+
+        
+    
+    
+            circle_marker_3a12841de14343cbb6775cb1d0a3e511.bindTooltip(
+                `<div>
+                     Tutwa Lodge 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7c9c196e4b314dada9f251b52dc7997d = L.circleMarker(
+                [-28.997069800000002, 29.7113608],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_4e749eb9ce77418db0bb61c8f3ba1e1c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8820f9fc36064cd1a6a45f27b05df320 = $(`<div id="html_8820f9fc36064cd1a6a45f27b05df320" style="width: 100.0%; height: 100.0%;">Berg Adventures</div>`)[0];
+            popup_4e749eb9ce77418db0bb61c8f3ba1e1c.setContent(html_8820f9fc36064cd1a6a45f27b05df320);
+        
+
+        circle_marker_7c9c196e4b314dada9f251b52dc7997d.bindPopup(popup_4e749eb9ce77418db0bb61c8f3ba1e1c)
+        ;
+
+        
+    
+    
+            circle_marker_7c9c196e4b314dada9f251b52dc7997d.bindTooltip(
+                `<div>
+                     Berg Adventures
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d7722339a3ed483d9a69408019fc2b86 = L.circleMarker(
+                [-30.5475, 29.424444],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_1e47caed30044386b72a48e4ff8fa874 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5cbb3ab299ac4f258862ab83836d06bc = $(`<div id="html_5cbb3ab299ac4f258862ab83836d06bc" style="width: 100.0%; height: 100.0%;">ANEW Resort Ingeli Forest</div>`)[0];
+            popup_1e47caed30044386b72a48e4ff8fa874.setContent(html_5cbb3ab299ac4f258862ab83836d06bc);
+        
+
+        circle_marker_d7722339a3ed483d9a69408019fc2b86.bindPopup(popup_1e47caed30044386b72a48e4ff8fa874)
+        ;
+
+        
+    
+    
+            circle_marker_d7722339a3ed483d9a69408019fc2b86.bindTooltip(
+                `<div>
+                     ANEW Resort Ingeli Forest
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d27657b138be4853af307241fe626967 = L.circleMarker(
+                [-32.3903925, 20.627695277522218],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_5ac10089c0d0462a86a8c92b20bd2779 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5a955312f3544d878d405c7b1bd000cd = $(`<div id="html_5a955312f3544d878d405c7b1bd000cd" style="width: 100.0%; height: 100.0%;">Sutherland Planetarium</div>`)[0];
+            popup_5ac10089c0d0462a86a8c92b20bd2779.setContent(html_5a955312f3544d878d405c7b1bd000cd);
+        
+
+        circle_marker_d27657b138be4853af307241fe626967.bindPopup(popup_5ac10089c0d0462a86a8c92b20bd2779)
+        ;
+
+        
+    
+    
+            circle_marker_d27657b138be4853af307241fe626967.bindTooltip(
+                `<div>
+                     Sutherland Planetarium
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_87c4485671b24434a822d9a2652f1fe9 = L.circleMarker(
+                [-28.8125, 29.5408333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_28b5ad5483ab4bfbbddcb941da600dad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ae9da71ab53e440297b522f767fabf58 = $(`<div id="html_ae9da71ab53e440297b522f767fabf58" style="width: 100.0%; height: 100.0%;">Tugela River Lodge</div>`)[0];
+            popup_28b5ad5483ab4bfbbddcb941da600dad.setContent(html_ae9da71ab53e440297b522f767fabf58);
+        
+
+        circle_marker_87c4485671b24434a822d9a2652f1fe9.bindPopup(popup_28b5ad5483ab4bfbbddcb941da600dad)
+        ;
+
+        
+    
+    
+            circle_marker_87c4485671b24434a822d9a2652f1fe9.bindTooltip(
+                `<div>
+                     Tugela River Lodge
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0989a9dbc8bb4ab6b58232e40907a4f3 = L.circleMarker(
+                [-29.013428629, 29.48881693906432],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_b9006f218c1f4646a69bb334f6478526 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1edaa9e908f14263afb89deb7e6a2a18 = $(`<div id="html_1edaa9e908f14263afb89deb7e6a2a18" style="width: 100.0%; height: 100.0%;">Ardmore Guest Farm</div>`)[0];
+            popup_b9006f218c1f4646a69bb334f6478526.setContent(html_1edaa9e908f14263afb89deb7e6a2a18);
+        
+
+        circle_marker_0989a9dbc8bb4ab6b58232e40907a4f3.bindPopup(popup_b9006f218c1f4646a69bb334f6478526)
+        ;
+
+        
+    
+    
+            circle_marker_0989a9dbc8bb4ab6b58232e40907a4f3.bindTooltip(
+                `<div>
+                     Ardmore Guest Farm
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fe9fa1a52e3049a8b31e38b5c00a1381 = L.circleMarker(
+                [-34.1252157, 22.1134424],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_7cfbcb05a8b244ddb2f78d5a9662501f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_76e088a444f34e3f97e62febf6c553f4 = $(`<div id="html_76e088a444f34e3f97e62febf6c553f4" style="width: 100.0%; height: 100.0%;">ATKV-Hartenbos</div>`)[0];
+            popup_7cfbcb05a8b244ddb2f78d5a9662501f.setContent(html_76e088a444f34e3f97e62febf6c553f4);
+        
+
+        circle_marker_fe9fa1a52e3049a8b31e38b5c00a1381.bindPopup(popup_7cfbcb05a8b244ddb2f78d5a9662501f)
+        ;
+
+        
+    
+    
+            circle_marker_fe9fa1a52e3049a8b31e38b5c00a1381.bindTooltip(
+                `<div>
+                     ATKV-Hartenbos
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1b1d7a8e70cc475fb79fd5a6cdf6db75 = L.circleMarker(
+                [-24.8806014, 28.290477399999997],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_600329b5bc9344e5b6d3b486c489c0e9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_70e44d3069d6430492a951f71f16a087 = $(`<div id="html_70e44d3069d6430492a951f71f16a087" style="width: 100.0%; height: 100.0%;">ATKV Klein-Kariba Holiday Resort</div>`)[0];
+            popup_600329b5bc9344e5b6d3b486c489c0e9.setContent(html_70e44d3069d6430492a951f71f16a087);
+        
+
+        circle_marker_1b1d7a8e70cc475fb79fd5a6cdf6db75.bindPopup(popup_600329b5bc9344e5b6d3b486c489c0e9)
+        ;
+
+        
+    
+    
+            circle_marker_1b1d7a8e70cc475fb79fd5a6cdf6db75.bindTooltip(
+                `<div>
+                     ATKV Klein-Kariba Holiday Resort
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7f22e68838174c6980e406b6d5830dc6 = L.circleMarker(
+                [-30.1158333, 30.849444399999996],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_a4fff3fd565848fc88e39d06592cc93c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_28287a3f89cf43b2a193a8c4c01c7bc3 = $(`<div id="html_28287a3f89cf43b2a193a8c4c01c7bc3" style="width: 100.0%; height: 100.0%;">ATKV-Natalia</div>`)[0];
+            popup_a4fff3fd565848fc88e39d06592cc93c.setContent(html_28287a3f89cf43b2a193a8c4c01c7bc3);
+        
+
+        circle_marker_7f22e68838174c6980e406b6d5830dc6.bindPopup(popup_a4fff3fd565848fc88e39d06592cc93c)
+        ;
+
+        
+    
+    
+            circle_marker_7f22e68838174c6980e406b6d5830dc6.bindTooltip(
+                `<div>
+                     ATKV-Natalia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1774275c8c17405c9cedaf259c7caf93 = L.circleMarker(
+                [-23.936953212600002, 30.916065507214466],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_d040b291180c4c36adc65a2e27bc6d9a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0e0f9185e24944c58ac807b2dcf98b3c = $(`<div id="html_0e0f9185e24944c58ac807b2dcf98b3c" style="width: 100.0%; height: 100.0%;">Abelana Guest Farm</div>`)[0];
+            popup_d040b291180c4c36adc65a2e27bc6d9a.setContent(html_0e0f9185e24944c58ac807b2dcf98b3c);
+        
+
+        circle_marker_1774275c8c17405c9cedaf259c7caf93.bindPopup(popup_d040b291180c4c36adc65a2e27bc6d9a)
+        ;
+
+        
+    
+    
+            circle_marker_1774275c8c17405c9cedaf259c7caf93.bindTooltip(
+                `<div>
+                     Abelana Guest Farm
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2e41a5bcd2a14efda8167679244ea6d8 = L.circleMarker(
+                [-28.597758000000002, 29.120914399999997],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_009fb73728dc41df8fe1aae974dfc207 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_12abd87cca3943ffae5b6613e5133aaf = $(`<div id="html_12abd87cca3943ffae5b6613e5133aaf" style="width: 100.0%; height: 100.0%;">ATKV- Drakensville</div>`)[0];
+            popup_009fb73728dc41df8fe1aae974dfc207.setContent(html_12abd87cca3943ffae5b6613e5133aaf);
+        
+
+        circle_marker_2e41a5bcd2a14efda8167679244ea6d8.bindPopup(popup_009fb73728dc41df8fe1aae974dfc207)
+        ;
+
+        
+    
+    
+            circle_marker_2e41a5bcd2a14efda8167679244ea6d8.bindTooltip(
+                `<div>
+                     ATKV- Drakensville
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8620b11ecb0444efa91424ddba807ca8 = L.circleMarker(
+                [-26.188212849, 28.024503548038577],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_b76b6dd8c1914170a76fbd9ba6360bed = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b014767d2da14819a6a7e4a36fe2c1bf = $(`<div id="html_b014767d2da14819a6a7e4a36fe2c1bf" style="width: 100.0%; height: 100.0%;">Wits Planetarium</div>`)[0];
+            popup_b76b6dd8c1914170a76fbd9ba6360bed.setContent(html_b014767d2da14819a6a7e4a36fe2c1bf);
+        
+
+        circle_marker_8620b11ecb0444efa91424ddba807ca8.bindPopup(popup_b76b6dd8c1914170a76fbd9ba6360bed)
+        ;
+
+        
+    
+    
+            circle_marker_8620b11ecb0444efa91424ddba807ca8.bindTooltip(
+                `<div>
+                     Wits Planetarium
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_89f70459352645aa845f54cfe16e11e0 = L.circleMarker(
+                [-26.095556, 27.775555999999998],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_0c3f4a7fd3334e4f8f7042a7db8b675f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2cc51931eee74389b2434948a64fd6c3 = $(`<div id="html_2cc51931eee74389b2434948a64fd6c3" style="width: 100.0%; height: 100.0%;">Maropeng ( Cradle of humankind)</div>`)[0];
+            popup_0c3f4a7fd3334e4f8f7042a7db8b675f.setContent(html_2cc51931eee74389b2434948a64fd6c3);
+        
+
+        circle_marker_89f70459352645aa845f54cfe16e11e0.bindPopup(popup_0c3f4a7fd3334e4f8f7042a7db8b675f)
+        ;
+
+        
+    
+    
+            circle_marker_89f70459352645aa845f54cfe16e11e0.bindTooltip(
+                `<div>
+                     Maropeng ( Cradle of humankind)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_14f2dc9c123142afa67ced01b0da13b6 = L.circleMarker(
+                [-34.4511348, 140.56966440000002],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_6335c72098924667bbe574d5fe8719ab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d628f75c483a49118a13cc023ba33d4e = $(`<div id="html_d628f75c483a49118a13cc023ba33d4e" style="width: 100.0%; height: 100.0%;">Victoria West tourism And Conservation Primary Co-Operative Limited</div>`)[0];
+            popup_6335c72098924667bbe574d5fe8719ab.setContent(html_d628f75c483a49118a13cc023ba33d4e);
+        
+
+        circle_marker_14f2dc9c123142afa67ced01b0da13b6.bindPopup(popup_6335c72098924667bbe574d5fe8719ab)
+        ;
+
+        
+    
+    
+            circle_marker_14f2dc9c123142afa67ced01b0da13b6.bindTooltip(
+                `<div>
+                     Victoria West tourism And Conservation Primary Co-Operative Limited
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b155fc9849be46a5b62419ba498b5318 = L.circleMarker(
+                [-25.044172600000003, 31.128355199999998],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_3d2a7baacd194cf0828c01f4c9a4f184 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9e7bd046d33d4d2ab6e5c43d3c6ab517 = $(`<div id="html_9e7bd046d33d4d2ab6e5c43d3c6ab517" style="width: 100.0%; height: 100.0%;">Extreme Adventure Camp </div>`)[0];
+            popup_3d2a7baacd194cf0828c01f4c9a4f184.setContent(html_9e7bd046d33d4d2ab6e5c43d3c6ab517);
+        
+
+        circle_marker_b155fc9849be46a5b62419ba498b5318.bindPopup(popup_3d2a7baacd194cf0828c01f4c9a4f184)
+        ;
+
+        
+    
+    
+            circle_marker_b155fc9849be46a5b62419ba498b5318.bindTooltip(
+                `<div>
+                     Extreme Adventure Camp 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d235c755819c436caf62f33b137e2cee = L.circleMarker(
+                [-31.403055, 23.120556],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_cb3ef57c974141b1ba25b0f0f3f4cbdb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8cffbedc8daa4623af55f55ad5bc0d7d = $(`<div id="html_8cffbedc8daa4623af55f55ad5bc0d7d" style="width: 100.0%; height: 100.0%;">Die Peperboom B&B</div>`)[0];
+            popup_cb3ef57c974141b1ba25b0f0f3f4cbdb.setContent(html_8cffbedc8daa4623af55f55ad5bc0d7d);
+        
+
+        circle_marker_d235c755819c436caf62f33b137e2cee.bindPopup(popup_cb3ef57c974141b1ba25b0f0f3f4cbdb)
+        ;
+
+        
+    
+    
+            circle_marker_d235c755819c436caf62f33b137e2cee.bindTooltip(
+                `<div>
+                     Die Peperboom B&B
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0cfb1e550b2d490ba8692c2dfdc28f5a = L.circleMarker(
+                [-32.46514459918, 20.453340194197725],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_d7aa2f348c384ded992cadcbf61ee8b3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9d2781a960c74609bcb19e81f6251220 = $(`<div id="html_9d2781a960c74609bcb19e81f6251220" style="width: 100.0%; height: 100.0%;">Blesfontein Guest Farm</div>`)[0];
+            popup_d7aa2f348c384ded992cadcbf61ee8b3.setContent(html_9d2781a960c74609bcb19e81f6251220);
+        
+
+        circle_marker_0cfb1e550b2d490ba8692c2dfdc28f5a.bindPopup(popup_d7aa2f348c384ded992cadcbf61ee8b3)
+        ;
+
+        
+    
+    
+            circle_marker_0cfb1e550b2d490ba8692c2dfdc28f5a.bindTooltip(
+                `<div>
+                     Blesfontein Guest Farm
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_977743fe43704b94ae8440b1dc30afbd = L.circleMarker(
+                [-30.5588011, 22.9374776],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_ee1358c0d1ba41d5817a27223b98ad1f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fb87c5a192b148eb893a49d07fca537e = $(`<div id="html_fb87c5a192b148eb893a49d07fca537e" style="width: 100.0%; height: 100.0%;">Bushwhacked Outdoor Adventures</div>`)[0];
+            popup_ee1358c0d1ba41d5817a27223b98ad1f.setContent(html_fb87c5a192b148eb893a49d07fca537e);
+        
+
+        circle_marker_977743fe43704b94ae8440b1dc30afbd.bindPopup(popup_ee1358c0d1ba41d5817a27223b98ad1f)
+        ;
+
+        
+    
+    
+            circle_marker_977743fe43704b94ae8440b1dc30afbd.bindTooltip(
+                `<div>
+                     Bushwhacked Outdoor Adventures
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f3c4ac8e07a64edbae870b0a06b30d36 = L.circleMarker(
+                [-24.113057255999998, 28.135162513352423],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_f3a371aeb7db4faa8953620433e133ca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6ee988d654ed406c89394d479101abac = $(`<div id="html_6ee988d654ed406c89394d479101abac" style="width: 100.0%; height: 100.0%;">Ants Nest </div>`)[0];
+            popup_f3a371aeb7db4faa8953620433e133ca.setContent(html_6ee988d654ed406c89394d479101abac);
+        
+
+        circle_marker_f3c4ac8e07a64edbae870b0a06b30d36.bindPopup(popup_f3a371aeb7db4faa8953620433e133ca)
+        ;
+
+        
+    
+    
+            circle_marker_f3c4ac8e07a64edbae870b0a06b30d36.bindTooltip(
+                `<div>
+                     Ants Nest 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_52225a9e07624d2aa5fd670f7755f5e5 = L.circleMarker(
+                [-25.936343899999997, 28.081310499999997],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_6e91b688441a4898b621a009282a741e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_29b5f34521824023bd9131ca61d2a93a = $(`<div id="html_29b5f34521824023bd9131ca61d2a93a" style="width: 100.0%; height: 100.0%;">ITFFA</div>`)[0];
+            popup_6e91b688441a4898b621a009282a741e.setContent(html_29b5f34521824023bd9131ca61d2a93a);
+        
+
+        circle_marker_52225a9e07624d2aa5fd670f7755f5e5.bindPopup(popup_6e91b688441a4898b621a009282a741e)
+        ;
+
+        
+    
+    
+            circle_marker_52225a9e07624d2aa5fd670f7755f5e5.bindTooltip(
+                `<div>
+                     ITFFA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ead931b521dc4b7f9921471bc05a0827 = L.circleMarker(
+                [-33.460278, 18.723611],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_ac12f24aff4c478990c13719bf50a733 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_479ecff8dc4d44738c62aaa2e366d315 = $(`<div id="html_479ecff8dc4d44738c62aaa2e366d315" style="width: 100.0%; height: 100.0%;">Mother City SkyDiving</div>`)[0];
+            popup_ac12f24aff4c478990c13719bf50a733.setContent(html_479ecff8dc4d44738c62aaa2e366d315);
+        
+
+        circle_marker_ead931b521dc4b7f9921471bc05a0827.bindPopup(popup_ac12f24aff4c478990c13719bf50a733)
+        ;
+
+        
+    
+    
+            circle_marker_ead931b521dc4b7f9921471bc05a0827.bindTooltip(
+                `<div>
+                     Mother City SkyDiving
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b2703bcfd0c64b3e9b73240787108d1b = L.circleMarker(
+                [-26.20849, 28.052529800000002],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_2d983c8d12e449eca9aa4321f6bda7e5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0e89e5a63999435da1cb4725f050ce92 = $(`<div id="html_0e89e5a63999435da1cb4725f050ce92" style="width: 100.0%; height: 100.0%;">Syavaya Group pty ltd</div>`)[0];
+            popup_2d983c8d12e449eca9aa4321f6bda7e5.setContent(html_0e89e5a63999435da1cb4725f050ce92);
+        
+
+        circle_marker_b2703bcfd0c64b3e9b73240787108d1b.bindPopup(popup_2d983c8d12e449eca9aa4321f6bda7e5)
+        ;
+
+        
+    
+    
+            circle_marker_b2703bcfd0c64b3e9b73240787108d1b.bindTooltip(
+                `<div>
+                     Syavaya Group pty ltd
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_87e819645cad4096964baa62560390b6 = L.circleMarker(
+                [-29.128333, 19.395833],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_fe6448d868fb4d58bc1d2437fa575fd8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_da3cf599c2344828823fc68c1352daa6 = $(`<div id="html_da3cf599c2344828823fc68c1352daa6" style="width: 100.0%; height: 100.0%;">Wickens Guesthouse Pofadder</div>`)[0];
+            popup_fe6448d868fb4d58bc1d2437fa575fd8.setContent(html_da3cf599c2344828823fc68c1352daa6);
+        
+
+        circle_marker_87e819645cad4096964baa62560390b6.bindPopup(popup_fe6448d868fb4d58bc1d2437fa575fd8)
+        ;
+
+        
+    
+    
+            circle_marker_87e819645cad4096964baa62560390b6.bindTooltip(
+                `<div>
+                     Wickens Guesthouse Pofadder
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8c6176f472df4cc1898849fd70df3e4f = L.circleMarker(
+                [-30.953766584, 24.533297670609198],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_03fc60b3232845d38df6a1c12a05f1a5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ce93cae265f6434fb32d74eb522df506 = $(`<div id="html_ce93cae265f6434fb32d74eb522df506" style="width: 100.0%; height: 100.0%;">Khoisan Karoo Conservancy</div>`)[0];
+            popup_03fc60b3232845d38df6a1c12a05f1a5.setContent(html_ce93cae265f6434fb32d74eb522df506);
+        
+
+        circle_marker_8c6176f472df4cc1898849fd70df3e4f.bindPopup(popup_03fc60b3232845d38df6a1c12a05f1a5)
+        ;
+
+        
+    
+    
+            circle_marker_8c6176f472df4cc1898849fd70df3e4f.bindTooltip(
+                `<div>
+                     Khoisan Karoo Conservancy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_62e4c4f26f9244b1ae8cb9c7bb8e3423 = L.circleMarker(
+                [-25.8763485, 29.201044699999997],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_5badc5cf68c048de8111d5ca6f4c5a2b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_db94f5b8549e40fcab0ae3012f5be47f = $(`<div id="html_db94f5b8549e40fcab0ae3012f5be47f" style="width: 100.0%; height: 100.0%;">Ramandire Bed and Breakfast </div>`)[0];
+            popup_5badc5cf68c048de8111d5ca6f4c5a2b.setContent(html_db94f5b8549e40fcab0ae3012f5be47f);
+        
+
+        circle_marker_62e4c4f26f9244b1ae8cb9c7bb8e3423.bindPopup(popup_5badc5cf68c048de8111d5ca6f4c5a2b)
+        ;
+
+        
+    
+    
+            circle_marker_62e4c4f26f9244b1ae8cb9c7bb8e3423.bindTooltip(
+                `<div>
+                     Ramandire Bed and Breakfast 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a5dfb09a2712403bbd8fcd9eefd25eea = L.circleMarker(
+                [-22.967642899999998, 30.4596582],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_130557d09cf3492080d1fe6e1383f34d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_56c225f50bb74c1b9f6dd2739502dd65 = $(`<div id="html_56c225f50bb74c1b9f6dd2739502dd65" style="width: 100.0%; height: 100.0%;">Vele villa Lodge</div>`)[0];
+            popup_130557d09cf3492080d1fe6e1383f34d.setContent(html_56c225f50bb74c1b9f6dd2739502dd65);
+        
+
+        circle_marker_a5dfb09a2712403bbd8fcd9eefd25eea.bindPopup(popup_130557d09cf3492080d1fe6e1383f34d)
+        ;
+
+        
+    
+    
+            circle_marker_a5dfb09a2712403bbd8fcd9eefd25eea.bindTooltip(
+                `<div>
+                     Vele villa Lodge
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_dc8bba34e2f84897b3f6aa40a0c3c2e1 = L.circleMarker(
+                [-29.116395, 26.215496],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_356aec297bfc48a58f647431dfef79c6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_44468673628a407f9c0f0cfc82fb80fb = $(`<div id="html_44468673628a407f9c0f0cfc82fb80fb" style="width: 100.0%; height: 100.0%;">Central University of Technology, South Africa</div>`)[0];
+            popup_356aec297bfc48a58f647431dfef79c6.setContent(html_44468673628a407f9c0f0cfc82fb80fb);
+        
+
+        circle_marker_dc8bba34e2f84897b3f6aa40a0c3c2e1.bindPopup(popup_356aec297bfc48a58f647431dfef79c6)
+        ;
+
+        
+    
+    
+            circle_marker_dc8bba34e2f84897b3f6aa40a0c3c2e1.bindTooltip(
+                `<div>
+                     Central University of Technology, South Africa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_20570a00439c48f4a0cfa5ba35032bc3 = L.circleMarker(
+                [-26.096110999999997, 27.975],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_43d06496254e4a53a72c36c82f46ec26 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_44e2b5fa4f6e4a7bb656127b9f2f6c75 = $(`<div id="html_44e2b5fa4f6e4a7bb656127b9f2f6c75" style="width: 100.0%; height: 100.0%;">Firelight Tours & Safaris</div>`)[0];
+            popup_43d06496254e4a53a72c36c82f46ec26.setContent(html_44e2b5fa4f6e4a7bb656127b9f2f6c75);
+        
+
+        circle_marker_20570a00439c48f4a0cfa5ba35032bc3.bindPopup(popup_43d06496254e4a53a72c36c82f46ec26)
+        ;
+
+        
+    
+    
+            circle_marker_20570a00439c48f4a0cfa5ba35032bc3.bindTooltip(
+                `<div>
+                     Firelight Tours & Safaris
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f499831e7c0947a8af66f60e415411eb = L.circleMarker(
+                [-26.862538300000004, 26.6656814],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_541317bb09b24585a7a919df8e557a75 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_28b655fdc83c46ad979336501901c527 = $(`<div id="html_28b655fdc83c46ad979336501901c527" style="width: 100.0%; height: 100.0%;">Harmony Place B & B</div>`)[0];
+            popup_541317bb09b24585a7a919df8e557a75.setContent(html_28b655fdc83c46ad979336501901c527);
+        
+
+        circle_marker_f499831e7c0947a8af66f60e415411eb.bindPopup(popup_541317bb09b24585a7a919df8e557a75)
+        ;
+
+        
+    
+    
+            circle_marker_f499831e7c0947a8af66f60e415411eb.bindTooltip(
+                `<div>
+                     Harmony Place B & B
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f821212e009b4fc49c8a56e1b169b93e = L.circleMarker(
+                [-29.106997345, 26.188684783901127],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_45fa11e5ae9e4846be69e85a0ec37175 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d5035df1c2a245b3a983411db87571b2 = $(`<div id="html_d5035df1c2a245b3a983411db87571b2" style="width: 100.0%; height: 100.0%;">Univesrity of the Free State</div>`)[0];
+            popup_45fa11e5ae9e4846be69e85a0ec37175.setContent(html_d5035df1c2a245b3a983411db87571b2);
+        
+
+        circle_marker_f821212e009b4fc49c8a56e1b169b93e.bindPopup(popup_45fa11e5ae9e4846be69e85a0ec37175)
+        ;
+
+        
+    
+    
+            circle_marker_f821212e009b4fc49c8a56e1b169b93e.bindTooltip(
+                `<div>
+                     Univesrity of the Free State
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2da0cb826159408d98e0a5ce8d1eda1c = L.circleMarker(
+                [-26.898551, 26.6669032],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_63191894e3884fa9ad29fde784af2da0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_87b99baf3e5147a9b8e12bd72261d069 = $(`<div id="html_87b99baf3e5147a9b8e12bd72261d069" style="width: 100.0%; height: 100.0%;">Prison View Guest House</div>`)[0];
+            popup_63191894e3884fa9ad29fde784af2da0.setContent(html_87b99baf3e5147a9b8e12bd72261d069);
+        
+
+        circle_marker_2da0cb826159408d98e0a5ce8d1eda1c.bindPopup(popup_63191894e3884fa9ad29fde784af2da0)
+        ;
+
+        
+    
+    
+            circle_marker_2da0cb826159408d98e0a5ce8d1eda1c.bindTooltip(
+                `<div>
+                     Prison View Guest House
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2603f7ec9b0d4138b6b157e0296d1123 = L.circleMarker(
+                [-30.525848684899998, 27.361281403306158],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_b391b1b3935f46fda27773fcbfa72fee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c487a6ab31ae4be68a3eb7c03e342fad = $(`<div id="html_c487a6ab31ae4be68a3eb7c03e342fad" style="width: 100.0%; height: 100.0%;">Aligeo Hotel</div>`)[0];
+            popup_b391b1b3935f46fda27773fcbfa72fee.setContent(html_c487a6ab31ae4be68a3eb7c03e342fad);
+        
+
+        circle_marker_2603f7ec9b0d4138b6b157e0296d1123.bindPopup(popup_b391b1b3935f46fda27773fcbfa72fee)
+        ;
+
+        
+    
+    
+            circle_marker_2603f7ec9b0d4138b6b157e0296d1123.bindTooltip(
+                `<div>
+                     Aligeo Hotel
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f975f51aa9574b829c27e0db5ba148a7 = L.circleMarker(
+                [-25.044172600000003, 31.128355199999998],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_3ecee4d306e94f50b2586bae17d0d236 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d137afe0eeb54bd88e556f19d73d5df7 = $(`<div id="html_d137afe0eeb54bd88e556f19d73d5df7" style="width: 100.0%; height: 100.0%;">otj pride guesthouse</div>`)[0];
+            popup_3ecee4d306e94f50b2586bae17d0d236.setContent(html_d137afe0eeb54bd88e556f19d73d5df7);
+        
+
+        circle_marker_f975f51aa9574b829c27e0db5ba148a7.bindPopup(popup_3ecee4d306e94f50b2586bae17d0d236)
+        ;
+
+        
+    
+    
+            circle_marker_f975f51aa9574b829c27e0db5ba148a7.bindTooltip(
+                `<div>
+                     otj pride guesthouse
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7a1ca731cb094ed8a677842644b4aaf0 = L.circleMarker(
+                [-34.4511348, 140.56966440000002],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_d7f50d092ebf47158d2c8b21f18744bd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8766f88fd9214ad2859c8ac415a1a14a = $(`<div id="html_8766f88fd9214ad2859c8ac415a1a14a" style="width: 100.0%; height: 100.0%;">JAKHALSDANS</div>`)[0];
+            popup_d7f50d092ebf47158d2c8b21f18744bd.setContent(html_8766f88fd9214ad2859c8ac415a1a14a);
+        
+
+        circle_marker_7a1ca731cb094ed8a677842644b4aaf0.bindPopup(popup_d7f50d092ebf47158d2c8b21f18744bd)
+        ;
+
+        
+    
+    
+            circle_marker_7a1ca731cb094ed8a677842644b4aaf0.bindTooltip(
+                `<div>
+                     JAKHALSDANS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f6ac054ebfb64dcfb481f54dae3910de = L.circleMarker(
+                [-29.861825, 31.009909000000004],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_e1b2c875db9b4d138012d53e1d96fb1d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4005e987a01d4d838c7643197dadb5fa = $(`<div id="html_4005e987a01d4d838c7643197dadb5fa" style="width: 100.0%; height: 100.0%;">JM Bioenergy Pty Ltd </div>`)[0];
+            popup_e1b2c875db9b4d138012d53e1d96fb1d.setContent(html_4005e987a01d4d838c7643197dadb5fa);
+        
+
+        circle_marker_f6ac054ebfb64dcfb481f54dae3910de.bindPopup(popup_e1b2c875db9b4d138012d53e1d96fb1d)
+        ;
+
+        
+    
+    
+            circle_marker_f6ac054ebfb64dcfb481f54dae3910de.bindTooltip(
+                `<div>
+                     JM Bioenergy Pty Ltd 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3332f20a85d34e3a8d7fd17e35658219 = L.circleMarker(
+                [-25.665654999999997, 27.241448],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_7b68a262dcc640ff931bcc2f60c71cf1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7927c9b173db4d99ab70309197f2e908 = $(`<div id="html_7927c9b173db4d99ab70309197f2e908" style="width: 100.0%; height: 100.0%;">Tlhago Nature Travellers cc</div>`)[0];
+            popup_7b68a262dcc640ff931bcc2f60c71cf1.setContent(html_7927c9b173db4d99ab70309197f2e908);
+        
+
+        circle_marker_3332f20a85d34e3a8d7fd17e35658219.bindPopup(popup_7b68a262dcc640ff931bcc2f60c71cf1)
+        ;
+
+        
+    
+    
+            circle_marker_3332f20a85d34e3a8d7fd17e35658219.bindTooltip(
+                `<div>
+                     Tlhago Nature Travellers cc
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_645dbcb7751440f0a68015b02f45ca2d = L.circleMarker(
+                [-26.2227778, 27.89],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_124edff3a7164aff9346d9579fa5f992 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_85fc9f55de40424ea0bc7c5455f30eed = $(`<div id="html_85fc9f55de40424ea0bc7c5455f30eed" style="width: 100.0%; height: 100.0%;">Aahaah Shuttle & Tours</div>`)[0];
+            popup_124edff3a7164aff9346d9579fa5f992.setContent(html_85fc9f55de40424ea0bc7c5455f30eed);
+        
+
+        circle_marker_645dbcb7751440f0a68015b02f45ca2d.bindPopup(popup_124edff3a7164aff9346d9579fa5f992)
+        ;
+
+        
+    
+    
+            circle_marker_645dbcb7751440f0a68015b02f45ca2d.bindTooltip(
+                `<div>
+                     Aahaah Shuttle & Tours
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_35383ab4b12d45448c47e8050c6ff241 = L.circleMarker(
+                [-27.906380100000003, 31.744662092754407],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_97b4d716a39e41d68eb88d333bcefccf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_20bbdbed9d414eabb5fa76a507408adf = $(`<div id="html_20bbdbed9d414eabb5fa76a507408adf" style="width: 100.0%; height: 100.0%;">NONGOMA CTO  FOR ALL</div>`)[0];
+            popup_97b4d716a39e41d68eb88d333bcefccf.setContent(html_20bbdbed9d414eabb5fa76a507408adf);
+        
+
+        circle_marker_35383ab4b12d45448c47e8050c6ff241.bindPopup(popup_97b4d716a39e41d68eb88d333bcefccf)
+        ;
+
+        
+    
+    
+            circle_marker_35383ab4b12d45448c47e8050c6ff241.bindTooltip(
+                `<div>
+                     NONGOMA CTO  FOR ALL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0d8a3cfd232b45658ee7b5b43b3bd3bc = L.circleMarker(
+                [-26.7150922, 27.101388699999998],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_7a85de7c633c4bf2a7707e22684e7f0c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_10694c4aac6f431f883e11b34c2018fe = $(`<div id="html_10694c4aac6f431f883e11b34c2018fe" style="width: 100.0%; height: 100.0%;">Letlotlo LA habaku holdings Pty ltd </div>`)[0];
+            popup_7a85de7c633c4bf2a7707e22684e7f0c.setContent(html_10694c4aac6f431f883e11b34c2018fe);
+        
+
+        circle_marker_0d8a3cfd232b45658ee7b5b43b3bd3bc.bindPopup(popup_7a85de7c633c4bf2a7707e22684e7f0c)
+        ;
+
+        
+    
+    
+            circle_marker_0d8a3cfd232b45658ee7b5b43b3bd3bc.bindTooltip(
+                `<div>
+                     Letlotlo LA habaku holdings Pty ltd 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_08df2c9c70e649758868441bc3aecfc4 = L.circleMarker(
+                [-26.393385100000003, 27.862732899999997],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_047e1e2b24324991badd1fd89885d5ea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_30ffcfea79e64be08e7e3caf113b081f = $(`<div id="html_30ffcfea79e64be08e7e3caf113b081f" style="width: 100.0%; height: 100.0%;">Independent jill</div>`)[0];
+            popup_047e1e2b24324991badd1fd89885d5ea.setContent(html_30ffcfea79e64be08e7e3caf113b081f);
+        
+
+        circle_marker_08df2c9c70e649758868441bc3aecfc4.bindPopup(popup_047e1e2b24324991badd1fd89885d5ea)
+        ;
+
+        
+    
+    
+            circle_marker_08df2c9c70e649758868441bc3aecfc4.bindTooltip(
+                `<div>
+                     Independent jill
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c5f1c9b2e9f14bd388f8c6e20f39245c = L.circleMarker(
+                [-28.873721000000003, 27.879371000000003],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_2a61298f9752402988ec4e1b3f57cecf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9d7ec19c3933493d9a7d3de647953e82 = $(`<div id="html_9d7ec19c3933493d9a7d3de647953e82" style="width: 100.0%; height: 100.0%;">Kibiti Tours</div>`)[0];
+            popup_2a61298f9752402988ec4e1b3f57cecf.setContent(html_9d7ec19c3933493d9a7d3de647953e82);
+        
+
+        circle_marker_c5f1c9b2e9f14bd388f8c6e20f39245c.bindPopup(popup_2a61298f9752402988ec4e1b3f57cecf)
+        ;
+
+        
+    
+    
+            circle_marker_c5f1c9b2e9f14bd388f8c6e20f39245c.bindTooltip(
+                `<div>
+                     Kibiti Tours
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4276801dbddf4afa942391bae61463d7 = L.circleMarker(
+                [-31.403055, 23.120556],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_9a873dd74e62403687a47b6bb3ef0086 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5cf732f9fafe423d862a47bfa1adab6c = $(`<div id="html_5cf732f9fafe423d862a47bfa1adab6c" style="width: 100.0%; height: 100.0%;">Victoria West Tours (Pty) Ltd</div>`)[0];
+            popup_9a873dd74e62403687a47b6bb3ef0086.setContent(html_5cf732f9fafe423d862a47bfa1adab6c);
+        
+
+        circle_marker_4276801dbddf4afa942391bae61463d7.bindPopup(popup_9a873dd74e62403687a47b6bb3ef0086)
+        ;
+
+        
+    
+    
+            circle_marker_4276801dbddf4afa942391bae61463d7.bindTooltip(
+                `<div>
+                     Victoria West Tours (Pty) Ltd
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_62ba6059a1ef451291a4f239a4262cac = L.circleMarker(
+                [-28.456325, 21.241867000000003],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_eda8f0157af34cd0868ba91754ba73e9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_57c0c8920a304f588e0cdfd7635a6d88 = $(`<div id="html_57c0c8920a304f588e0cdfd7635a6d88" style="width: 100.0%; height: 100.0%;">Siyanda ZF Mcawu Tour Operator (Pty)Ltd</div>`)[0];
+            popup_eda8f0157af34cd0868ba91754ba73e9.setContent(html_57c0c8920a304f588e0cdfd7635a6d88);
+        
+
+        circle_marker_62ba6059a1ef451291a4f239a4262cac.bindPopup(popup_eda8f0157af34cd0868ba91754ba73e9)
+        ;
+
+        
+    
+    
+            circle_marker_62ba6059a1ef451291a4f239a4262cac.bindTooltip(
+                `<div>
+                     Siyanda ZF Mcawu Tour Operator (Pty)Ltd
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_241d25f6f46d4dd2962f717888f27bd9 = L.circleMarker(
+                [-31.866389, 24.556944],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_ebfe0aed943540d78f226e6e5b055267 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_070e1fbad8fb4d6da34bf64271e27a26 = $(`<div id="html_070e1fbad8fb4d6da34bf64271e27a26" style="width: 100.0%; height: 100.0%;">@Nieu-Bethesda</div>`)[0];
+            popup_ebfe0aed943540d78f226e6e5b055267.setContent(html_070e1fbad8fb4d6da34bf64271e27a26);
+        
+
+        circle_marker_241d25f6f46d4dd2962f717888f27bd9.bindPopup(popup_ebfe0aed943540d78f226e6e5b055267)
+        ;
+
+        
+    
+    
+            circle_marker_241d25f6f46d4dd2962f717888f27bd9.bindTooltip(
+                `<div>
+                     @Nieu-Bethesda
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_23f07cc612144a238c149fdc29a2f38a = L.circleMarker(
+                [-25.769722199999997, 28.255555600000005],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_97ad4ddf1b864bc7862bfe57dff86cdb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a1f79a27cda94a60bc58ea4b96607e4c = $(`<div id="html_a1f79a27cda94a60bc58ea4b96607e4c" style="width: 100.0%; height: 100.0%;">Alpine Attitude Boutique Hotel</div>`)[0];
+            popup_97ad4ddf1b864bc7862bfe57dff86cdb.setContent(html_a1f79a27cda94a60bc58ea4b96607e4c);
+        
+
+        circle_marker_23f07cc612144a238c149fdc29a2f38a.bindPopup(popup_97ad4ddf1b864bc7862bfe57dff86cdb)
+        ;
+
+        
+    
+    
+            circle_marker_23f07cc612144a238c149fdc29a2f38a.bindTooltip(
+                `<div>
+                     Alpine Attitude Boutique Hotel
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b572a9afacaa4f71805908b8948e1e61 = L.circleMarker(
+                [-32.39039252940552, 20.627695277522218],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_f6cb96733daa479982bbcf1ffd9b83e2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_38e42fa6382647a78b53fdb1b71ee3c7 = $(`<div id="html_38e42fa6382647a78b53fdb1b71ee3c7" style="width: 100.0%; height: 100.0%;">Astrotourism Africa </div>`)[0];
+            popup_f6cb96733daa479982bbcf1ffd9b83e2.setContent(html_38e42fa6382647a78b53fdb1b71ee3c7);
+        
+
+        circle_marker_b572a9afacaa4f71805908b8948e1e61.bindPopup(popup_f6cb96733daa479982bbcf1ffd9b83e2)
+        ;
+
+        
+    
+    
+            circle_marker_b572a9afacaa4f71805908b8948e1e61.bindTooltip(
+                `<div>
+                     Astrotourism Africa 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4e2361273ea940e2b2ded08b28da5100 = L.circleMarker(
+                [-33.9376086964, 18.4287070096],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_b1a5666571cc41e3a863adb9d356d2da);
+        
+    
+        var popup_f7a547dc7f9943e2bab2b43de29caee0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4ae06c4fd6cb41ec95d25c0121d2b4ed = $(`<div id="html_4ae06c4fd6cb41ec95d25c0121d2b4ed" style="width: 100.0%; height: 100.0%;">Astrotourism Africa </div>`)[0];
+            popup_f7a547dc7f9943e2bab2b43de29caee0.setContent(html_4ae06c4fd6cb41ec95d25c0121d2b4ed);
+        
+
+        circle_marker_4e2361273ea940e2b2ded08b28da5100.bindPopup(popup_f7a547dc7f9943e2bab2b43de29caee0)
+        ;
+
+        
+    
+    
+            circle_marker_4e2361273ea940e2b2ded08b28da5100.bindTooltip(
+                `<div>
+                     Astrotourism Africa 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
